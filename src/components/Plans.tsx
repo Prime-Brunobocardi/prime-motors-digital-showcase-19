@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -50,7 +51,18 @@ const Plans = () => {
     duration: "48"
   }];
 
-  const whatsappLink = "https://api.whatsapp.com/message/GUS5BLBIHRFPE1?autoload=1&app_absent=0";
+  const whatsappLinks = [
+    "https://web.whatsapp.com/send?phone=5566992557948",
+    "https://wa.me/message/GUS5BLBIHRFPE1"
+  ];
+
+  let clickCounter = 0;
+
+  const handlePlanClick = () => {
+    const selectedLink = whatsappLinks[clickCounter % 2];
+    clickCounter++;
+    window.open(selectedLink, '_blank');
+  };
 
   useEffect(() => {
     if (!api) {
@@ -122,7 +134,7 @@ const Plans = () => {
                         
                         <Button 
                           className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3"
-                          onClick={() => window.open(whatsappLink, '_blank')}
+                          onClick={handlePlanClick}
                         >
                           🖱️ QUERO ESSE PLANO
                         </Button>
