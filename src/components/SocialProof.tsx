@@ -1,4 +1,5 @@
 
+
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
@@ -44,7 +45,7 @@ const SocialProof = () => {
       location: "Lucas do Rio Verde - MT",
       text: "Achei que ia ser mais complicado por estar com o nome sujo, mas me surpreendi. Faltou só uma explicação melhor no início, mas deu tudo certo no fim.",
       rating: 4,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=150&h=150&fit=crop&crop=face&auto=format"
+      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face&auto=format"
     }
   ];
 
@@ -134,3 +135,4 @@ const SocialProof = () => {
 };
 
 export default SocialProof;
+
