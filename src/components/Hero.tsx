@@ -34,6 +34,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-2xl"
+              onClick={() => window.open('https://api.whatsapp.com/message/GUS5BLBIHRFPE1?autoload=1&app_absent=0', '_blank')}
             >
               CLIQUE AQUI E SAIBA MAIS!
             </Button>
