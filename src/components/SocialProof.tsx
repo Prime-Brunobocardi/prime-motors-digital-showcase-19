@@ -121,7 +121,7 @@ const SocialProof = () => {
               Junte-se a centenas de clientes satisfeitos!
             </h3>
             <p className="text-gray-300 mb-6">
-              *Esta seção será atualizada com depoimentos reais dos nossos clientes*
+              *Esta seção será atualizada com mais depoimentos reais dos nossos clientes*
             </p>
             <div className="text-xl md:text-2xl font-bold">
               <span className="text-white">PRIME</span>
