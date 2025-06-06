@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MessageCircle } from "lucide-react";
@@ -20,10 +21,23 @@ const Contact = () => {
     }
   ];
 
+  const whatsappLinks = [
+    "https://web.whatsapp.com/send?phone=5566992557948",
+    "https://wa.me/message/GUS5BLBIHRFPE1"
+  ];
+
+  let clickCounter = 0;
+
   const handleWhatsAppClick = (phone: string, consultorName: string) => {
-    const message = `Olá ${consultorName}! Gostaria de saber mais sobre a Compra Programada.`;
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=55${phone.replace(/\D/g, '')}&text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const selectedLink = whatsappLinks[clickCounter % 2];
+    clickCounter++;
+    window.open(selectedLink, '_blank');
+  };
+
+  const handleMainButtonClick = () => {
+    const selectedLink = whatsappLinks[clickCounter % 2];
+    clickCounter++;
+    window.open(selectedLink, '_blank');
   };
 
   return (
@@ -73,7 +87,7 @@ const Contact = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-base font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
-              onClick={() => window.open('https://api.whatsapp.com/message/GUS5BLBIHRFPE1?autoload=1&app_absent=0', '_blank')}
+              onClick={handleMainButtonClick}
             >
               SIMULAR MINHA COMPRA PROGRAMADA
             </Button>
