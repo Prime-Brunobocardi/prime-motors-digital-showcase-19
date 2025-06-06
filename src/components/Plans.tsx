@@ -3,9 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import type { CarouselApi } from "@/components/ui/carousel";
+
 const Plans = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  
   const plans = [{
     credit: "30.000,00",
     installment: "1.250,00",
@@ -47,6 +49,9 @@ const Plans = () => {
     installment: "3.134,00",
     duration: "48"
   }];
+
+  const whatsappLink = "https://api.whatsapp.com/message/GUS5BLBIHRFPE1?autoload=1&app_absent=0";
+
   useEffect(() => {
     if (!api) {
       return;
@@ -67,7 +72,9 @@ const Plans = () => {
 
     return () => clearInterval(interval);
   }, [api]);
-  return <section id="planos" className="py-20 bg-black text-white">
+  
+  return (
+    <section id="planos" className="py-20 bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -79,11 +86,12 @@ const Plans = () => {
           
           <div className="max-w-6xl mx-auto">
             <Carousel setApi={setApi} className="w-full" opts={{
-            align: "start",
-            loop: true
-          }}>
+              align: "start",
+              loop: true
+            }}>
               <CarouselContent className="-ml-2 md:-ml-4">
-                {plans.map((plan, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                {plans.map((plan, index) => (
+                  <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                     <Card className="bg-gray-800 border-gray-700 p-6 card-hover h-full">
                       <div className="text-center">
                         <p className="text-gray-400 text-sm mb-2">VALOR DO CRÉDITO</p>
@@ -112,12 +120,16 @@ const Plans = () => {
                           </div>
                         </div>
                         
-                        <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3">
+                        <Button 
+                          className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3"
+                          onClick={() => window.open(whatsappLink, '_blank')}
+                        >
                           🖱️ QUERO ESSE PLANO
                         </Button>
                       </div>
                     </Card>
-                  </CarouselItem>)}
+                  </CarouselItem>
+                ))}
               </CarouselContent>
               <CarouselPrevious className="text-white border-white hover:text-black -left-12 bg-slate-50" />
               <CarouselNext className="border-white hover:bg-white -right-12 text-slate-950" />
@@ -138,6 +150,8 @@ const Plans = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Plans;
