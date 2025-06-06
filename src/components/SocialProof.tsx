@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
@@ -22,9 +23,60 @@ const SocialProof = () => {
       location: "Rondonópolis - MT", 
       text: "Processo muito fácil e parcelas que cabem no bolso. Estou muito satisfeito!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face&auto=format"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format"
+    },
+    {
+      name: "Fernanda Silva",
+      location: "Cuiabá - MT",
+      text: "Tive dúvidas no começo, parecia bom demais pra ser verdade. Mas deu certo! Só não dou 5 estrelas porque tive que correr atrás de algumas informações.",
+      rating: 4,
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face&auto=format"
+    },
+    {
+      name: "Roberto Costa",
+      location: "Primavera do Leste - MT",
+      text: "Confesso que no início fiquei com um pé atrás, mas o atendimento foi tão transparente que decidi seguir com a compra. Hoje estou com meu carro novo e feliz com a escolha.",
+      rating: 4.5,
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face&auto=format"
+    },
+    {
+      name: "Mariana Santos",
+      location: "Lucas do Rio Verde - MT",
+      text: "Achei que ia ser mais complicado por estar com o nome sujo, mas me surpreendi. Faltou só uma explicação melhor no início, mas deu tudo certo no fim.",
+      rating: 4,
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=150&h=150&fit=crop&crop=face&auto=format"
     }
   ];
+
+  const renderStars = (rating: number) => {
+    const stars = [];
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 !== 0;
+
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(
+        <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+      );
+    }
+
+    if (hasHalfStar) {
+      stars.push(
+        <div key="half" className="relative">
+          <Star className="w-5 h-5 text-yellow-400" />
+          <Star className="w-5 h-5 text-yellow-400 fill-current absolute top-0 left-0" style={{ clipPath: 'inset(0 50% 0 0)' }} />
+        </div>
+      );
+    }
+
+    const remainingStars = 5 - Math.ceil(rating);
+    for (let i = 0; i < remainingStars; i++) {
+      stars.push(
+        <Star key={`empty-${i}`} className="w-5 h-5 text-yellow-400" />
+      );
+    }
+
+    return stars;
+  };
 
   return (
     <section className="py-20 bg-gradient-to-r from-gray-900 to-black text-white">
@@ -37,7 +89,7 @@ const SocialProof = () => {
             Depoimentos reais de quem já realizou o sonho do carro próprio
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="bg-white/10 backdrop-blur-sm border-gray-700 p-6 card-hover">
                 <div className="flex items-center mb-4">
@@ -53,9 +105,7 @@ const SocialProof = () => {
                 </div>
                 
                 <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
+                  {renderStars(testimonial.rating)}
                 </div>
                 
                 <p className="text-gray-300 italic">
