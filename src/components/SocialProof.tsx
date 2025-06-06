@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
@@ -6,7 +5,7 @@ const SocialProof = () => {
   const testimonials = [
     {
       name: "Miguel Santos",
-      location: "Cuiabá - MT",
+      location: "Sinop - MT",
       text: "Estava negativado e consegui meu primeiro carro através da Compra Programada. Excelente atendimento!",
       rating: 5,
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&auto=format"
