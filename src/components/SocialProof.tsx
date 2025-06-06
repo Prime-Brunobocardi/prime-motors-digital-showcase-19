@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
@@ -15,14 +16,14 @@ const SocialProof = () => {
       location: "Várzea Grande - MT",
       text: "Troquei meu carro velho por um seminovo sem burocracia. Recomendo a todos!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=150&h=150&fit=crop&crop=face&auto=format"
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face&auto=format"
     },
     {
       name: "Carlos Mendes",
       location: "Rondonópolis - MT", 
       text: "Processo muito fácil e parcelas que cabem no bolso. Estou muito satisfeito!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format"
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face&auto=format"
     }
   ];
 
