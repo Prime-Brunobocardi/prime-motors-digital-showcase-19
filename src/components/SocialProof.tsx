@@ -15,7 +15,7 @@ const SocialProof = () => {
       location: "Várzea Grande - MT",
       text: "Troquei meu carro velho por um seminovo sem burocracia. Recomendo a todos!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face&auto=format"
+      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=150&h=150&fit=crop&crop=face&auto=format"
     },
     {
       name: "Carlos Mendes",
