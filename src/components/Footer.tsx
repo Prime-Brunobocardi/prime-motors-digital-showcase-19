@@ -1,4 +1,5 @@
 
+
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-12">
@@ -29,8 +30,8 @@ const Footer = () => {
               <div>
                 <h4 className="font-bold mb-4">Contato</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li>(65) 3000-0000</li>
-                  <li>contato@primemotorsmt.com.br</li>
+                  <li>(65) 9278-2092</li>
+                  <li>primemotorsmtmarketing@gmail.com</li>
                   <li>Cuiabá - MT</li>
                 </ul>
               </div>
@@ -61,3 +62,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
