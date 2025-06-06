@@ -1,5 +1,4 @@
 
-
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-12">
@@ -32,7 +31,15 @@ const Footer = () => {
                 <ul className="space-y-2 text-gray-400">
                   <li>(65) 9278-2092</li>
                   <li>primemotorsmtmarketing@gmail.com</li>
-                  <li>Cuiabá - MT</li>
+                  <li className="mt-4">
+                    <h5 className="font-semibold text-white mb-2">Atendemos em:</h5>
+                    <div className="space-y-1">
+                      <div>📍 Sorriso</div>
+                      <div>📍 Lucas do Rio Verde</div>
+                      <div>📍 Cuiabá</div>
+                      <div>📍 Feliz Natal</div>
+                    </div>
+                  </li>
                 </ul>
               </div>
               
@@ -62,4 +69,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
