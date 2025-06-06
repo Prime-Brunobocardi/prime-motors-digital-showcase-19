@@ -5,6 +5,7 @@ import Advantages from "@/components/Advantages";
 import HowItWorks from "@/components/HowItWorks";
 import Plans from "@/components/Plans";
 import Examples from "@/components/Examples";
+import VideoSection from "@/components/VideoSection";
 import FAQ from "@/components/FAQ";
 import SocialProof from "@/components/SocialProof";
 import Contact from "@/components/Contact";
@@ -19,6 +20,7 @@ const Index = () => {
       <HowItWorks />
       <Plans />
       <Examples />
+      <VideoSection />
       <SocialProof />
       <FAQ />
       <Contact />
