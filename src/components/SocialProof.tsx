@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
@@ -9,21 +8,21 @@ const SocialProof = () => {
       location: "Cuiabá - MT",
       text: "Estava negativado e consegui meu primeiro carro através da Compra Programada. Excelente atendimento!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&auto=format"
     },
     {
       name: "Alice Oliveira", 
       location: "Várzea Grande - MT",
       text: "Troquei meu carro velho por um seminovo sem burocracia. Recomendo a todos!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=150&h=150&fit=crop&crop=face&auto=format"
     },
     {
       name: "Carlos Mendes",
       location: "Rondonópolis - MT", 
       text: "Processo muito fácil e parcelas que cabem no bolso. Estou muito satisfeito!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format"
     }
   ];
 
