@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MessageCircle } from "lucide-react";
@@ -9,29 +8,14 @@ const Contact = () => {
       name: "PRIME SORRISO",
       color: "bg-red-500",
       consultors: [
-        { name: "Bruno", phone: "(66) 99255-7948" },
-        { name: "Maicon", phone: "(66) 99647-1678" },
-        { name: "Sidinei", phone: "(66) 99249-0319" }
-      ]
-    },
-    {
-      name: "PRIME FELIZ NATAL",
-      color: "bg-red-500",
-      consultors: [
-        { name: "Emerson", phone: "(65) 99309-4875" }
+        { name: "Bruno", phone: "(66) 99255-7948" }
       ]
     },
     {
       name: "PRIME LUCAS",
       color: "bg-red-500",
       consultors: [
-        { name: "Ezequiel", phone: "(65) 99933-4239" },
-        { name: "Jones", phone: "(65) 99253-2900" },
-        { name: "Junior", phone: "(65) 99226-2126" },
-        { name: "Paulo", phone: "(65) 99343-2590" },
-        { name: "Rafael", phone: "(65) 99292-0759" },
-        { name: "Rafaela", phone: "(65) 99223-4822" },
-        { name: "Eduardo", phone: "(65) 99268-0982" }
+        { name: "Hygor", phone: "(65) 9276-9357" }
       ]
     }
   ];
