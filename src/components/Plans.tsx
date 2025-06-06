@@ -1,13 +1,13 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import type { CarouselApi } from "@/components/ui/carousel";
 
 const Plans = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  const clickCounterRef = useRef(0);
   
   const plans = [{
     credit: "30.000,00",
@@ -56,11 +56,9 @@ const Plans = () => {
     "https://wa.me/message/GUS5BLBIHRFPE1"
   ];
 
-  let clickCounter = 0;
-
   const handlePlanClick = () => {
-    const selectedLink = whatsappLinks[clickCounter % 2];
-    clickCounter++;
+    const selectedLink = whatsappLinks[clickCounterRef.current % 2];
+    clickCounterRef.current++;
     window.open(selectedLink, '_blank');
   };
 
