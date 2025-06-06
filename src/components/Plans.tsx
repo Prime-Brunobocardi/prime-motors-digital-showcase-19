@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -56,10 +57,18 @@ const Plans = () => {
     "https://wa.me/message/GUS5BLBIHRFPE1"
   ];
 
-  const handlePlanClick = () => {
+  const handlePlanClick = (plan: { credit: string; installment: string; duration: string }) => {
     const selectedLink = whatsappLinks[clickCounterRef.current % 2];
     clickCounterRef.current++;
-    window.open(selectedLink, '_blank');
+    
+    const message = `Olá! Tenho interesse no plano de R$ ${plan.credit} com parcelas de R$ ${plan.installment} em ${plan.duration} meses. Gostaria de mais informações!`;
+    const encodedMessage = encodeURIComponent(message);
+    
+    const linkWithMessage = selectedLink.includes('web.whatsapp.com') 
+      ? `${selectedLink}&text=${encodedMessage}`
+      : `${selectedLink}?text=${encodedMessage}`;
+    
+    window.open(linkWithMessage, '_blank');
   };
 
   useEffect(() => {
@@ -132,7 +141,7 @@ const Plans = () => {
                         
                         <Button 
                           className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3"
-                          onClick={handlePlanClick}
+                          onClick={() => handlePlanClick(plan)}
                         >
                           🖱️ QUERO ESSE PLANO
                         </Button>
