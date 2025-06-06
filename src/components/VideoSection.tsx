@@ -56,11 +56,11 @@ const VideoSection = () => {
             {videos.map((video, index) => (
               <Card key={video.id} className="bg-white/10 backdrop-blur-sm border-gray-700 overflow-hidden card-hover group cursor-pointer"
                     onClick={() => handleVideoClick(video.link)}>
-                <div className="relative">
+                <div className="relative aspect-[9/16] w-full">
                   <img 
                     src={video.thumbnail} 
                     alt={video.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
