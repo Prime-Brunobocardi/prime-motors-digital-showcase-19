@@ -30,13 +30,7 @@ const Contact = () => {
         { name: "Junior", phone: "(65) 99226-2126" },
         { name: "Paulo", phone: "(65) 99343-2590" },
         { name: "Rafael", phone: "(65) 99292-0759" },
-        { name: "Rafaela", phone: "(65) 99223-4822" }
-      ]
-    },
-    {
-      name: "CARRO FÁCIL",
-      color: "bg-red-500",
-      consultors: [
+        { name: "Rafaela", phone: "(65) 99223-4822" },
         { name: "Eduardo", phone: "(65) 99268-0982" }
       ]
     }
