@@ -108,7 +108,7 @@ const VideoSection = () => {
                 variant="outline" 
                 size="sm"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => window.open('https://www.instagram.com/', '_blank')}
+                onClick={() => window.open('https://www.instagram.com/primemotorsmt', '_blank')}
               >
                 <Instagram className="w-4 h-4 mr-2" />
                 Seguir no Instagram
