@@ -44,7 +44,7 @@ const Header = () => {
 
           <div className="hidden md:block">
             <Button className="bg-primary hover:bg-primary/90">
-              Simular Agora
+              Galeria
             </Button>
           </div>
 
@@ -74,7 +74,7 @@ const Header = () => {
                 </a>
               ))}
               <Button className="w-full mt-4 bg-primary hover:bg-primary/90">
-                Simular Agora
+                Galeria
               </Button>
             </div>
           </div>
