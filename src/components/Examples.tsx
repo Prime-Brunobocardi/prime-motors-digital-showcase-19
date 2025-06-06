@@ -100,34 +100,34 @@ const Examples = () => {
             </div>
           </Card>
           
-          {/* Resultado Final */}
-          <div className="max-w-2xl mx-auto">
-            <div className="flex items-center justify-center space-x-8 mb-8">
+          {/* Resultado Final - Layout Mobile Responsivo */}
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-8">
               <div className="text-center">
-                <div className="w-24 h-24 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">💰</span>
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl md:text-3xl">💰</span>
                 </div>
-                <p className="font-bold text-gray-900">PLANEJAMENTO</p>
-                <p className="text-primary font-bold">12 Parcelas</p>
+                <p className="font-bold text-gray-900 text-sm md:text-base">PLANEJAMENTO</p>
+                <p className="text-primary font-bold text-sm md:text-base">12 Parcelas</p>
               </div>
               
-              <div className="text-4xl text-gray-400">+</div>
+              <div className="text-2xl md:text-4xl text-gray-400 rotate-90 md:rotate-0">+</div>
               
               <div className="text-center">
-                <div className="w-24 h-24 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">🚗</span>
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl md:text-3xl">🚗</span>
                 </div>
-                <p className="font-bold text-gray-900">CARRO NOVO</p>
-                <p className="text-primary font-bold">36 Parcelas</p>
+                <p className="font-bold text-gray-900 text-sm md:text-base">CARRO NOVO</p>
+                <p className="text-primary font-bold text-sm md:text-base">36 Parcelas</p>
               </div>
               
-              <div className="text-4xl text-gray-400">=</div>
+              <div className="text-2xl md:text-4xl text-gray-400 rotate-90 md:rotate-0">=</div>
               
               <div className="text-center">
-                <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">🎉</span>
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl md:text-3xl">🎉</span>
                 </div>
-                <p className="font-bold text-gray-900">SONHO REALIZADO</p>
+                <p className="font-bold text-gray-900 text-sm md:text-base">SONHO REALIZADO</p>
               </div>
             </div>
             
