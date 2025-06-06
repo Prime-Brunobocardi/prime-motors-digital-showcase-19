@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
@@ -25,7 +24,7 @@ const Contact = () => {
             <Card className="p-6 text-center shadow-lg border-0 card-hover">
               <Mail className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="font-bold text-gray-900 mb-2">E-mail</h3>
-              <p className="text-gray-600">contato@primemotorsmt.com.br</p>
+              <p className="text-gray-600">primemotorsmtmarketing@gmail.com</p>
             </Card>
             
             <Card className="p-6 text-center shadow-lg border-0 card-hover">
