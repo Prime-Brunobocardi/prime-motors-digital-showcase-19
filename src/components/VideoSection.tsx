@@ -1,39 +1,39 @@
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Play, Instagram, Youtube } from "lucide-react";
+import { Play, Instagram } from "lucide-react";
 
 const VideoSection = () => {
   const videos = [
     {
-      id: "instagram",
+      id: "instagram-1",
       title: "Como Funciona a Compra Programada",
       description: "Veja como é simples adquirir seu veículo sem entrada e sem análise de crédito",
       thumbnail: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop&auto=format",
       platform: "Instagram",
       icon: Instagram,
-      link: "#", // Substitua pelo link real do seu Instagram
-      embedId: "", // Para quando quiser incorporar o vídeo
+      link: "https://www.instagram.com/reel/DKkm_GPuM4k/?igsh=YnNsNXZxc3B0Y3Mw",
+      embedId: "",
     },
     {
-      id: "youtube",
+      id: "instagram-2",
       title: "Depoimentos de Clientes Satisfeitos",
       description: "Conheça histórias reais de quem conquistou o carro dos sonhos",
       thumbnail: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop&auto=format",
-      platform: "YouTube",
-      icon: Youtube,
-      link: "#", // Substitua pelo link real do seu YouTube
-      embedId: "", // Para quando quiser incorporar o vídeo
+      platform: "Instagram",
+      icon: Instagram,
+      link: "https://www.instagram.com/reel/DKeuFp_uL5O/?igsh=b2FyajR5cGFicWo4",
+      embedId: "",
     },
     {
-      id: "tiktok",
+      id: "instagram-3",
       title: "Dicas Rápidas sobre Compra Programada",
       description: "Tudo que você precisa saber em poucos minutos",
       thumbnail: "https://images.unsplash.com/photo-1611095564141-bb12e45115b2?w=400&h=300&fit=crop&auto=format",
-      platform: "TikTok",
-      icon: Play,
-      link: "#", // Substitua pelo link real do seu TikTok
-      embedId: "", // Para quando quiser incorporar o vídeo
+      platform: "Instagram",
+      icon: Instagram,
+      link: "https://www.instagram.com/reel/DKYN0Znu17Z/?igsh=MWt6djk5NHVwbDloNQ==",
+      embedId: "",
     }
   ];
 
@@ -49,7 +49,7 @@ const VideoSection = () => {
             VEJA NOSSOS VÍDEOS
           </h2>
           <p className="text-xl text-gray-300 mb-12">
-            Acompanhe nossas redes sociais e saiba mais sobre a Compra Programada
+            Acompanhe nossos reels no Instagram e saiba mais sobre a Compra Programada
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -98,38 +98,20 @@ const VideoSection = () => {
           
           <div className="mt-12 p-6 bg-primary/20 rounded-2xl border border-primary/30">
             <h3 className="text-xl font-bold mb-4">
-              Siga-nos nas Redes Sociais
+              Siga-nos no Instagram
             </h3>
             <p className="text-gray-300 mb-6">
               Fique por dentro de todas as novidades e dicas sobre Compra Programada
             </p>
-            <div className="flex justify-center space-x-4">
+            <div className="flex justify-center">
               <Button 
                 variant="outline" 
                 size="sm"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://www.instagram.com/', '_blank')}
               >
                 <Instagram className="w-4 h-4 mr-2" />
-                Instagram
-              </Button>
-              <Button 
-                variant="outline" 
-                size="sm"
-                className="border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => window.open('#', '_blank')}
-              >
-                <Youtube className="w-4 h-4 mr-2" />
-                YouTube
-              </Button>
-              <Button 
-                variant="outline" 
-                size="sm"
-                className="border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => window.open('#', '_blank')}
-              >
-                <Play className="w-4 h-4 mr-2" />
-                TikTok
+                Seguir no Instagram
               </Button>
             </div>
           </div>
