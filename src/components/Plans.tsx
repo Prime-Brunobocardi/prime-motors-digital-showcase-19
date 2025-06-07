@@ -1,4 +1,5 @@
 
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -11,6 +12,18 @@ const Plans = () => {
   const clickCounterRef = useRef(0);
   
   const plans = [{
+    credit: "15.000,00",
+    installment: "650,00",
+    duration: "48"
+  }, {
+    credit: "20.000,00",
+    installment: "870,00",
+    duration: "48"
+  }, {
+    credit: "25.000,00",
+    installment: "1.080,00",
+    duration: "48"
+  }, {
     credit: "30.000,00",
     installment: "1.250,00",
     duration: "48"
@@ -49,6 +62,26 @@ const Plans = () => {
   }, {
     credit: "75.000,00",
     installment: "3.134,00",
+    duration: "48"
+  }, {
+    credit: "80.000,00",
+    installment: "3.280,00",
+    duration: "48"
+  }, {
+    credit: "85.000,00",
+    installment: "3.490,00",
+    duration: "48"
+  }, {
+    credit: "90.000,00",
+    installment: "3.690,00",
+    duration: "48"
+  }, {
+    credit: "95.000,00",
+    installment: "3.900,00",
+    duration: "48"
+  }, {
+    credit: "100.000,00",
+    installment: "4.100,00",
     duration: "48"
   }];
 
