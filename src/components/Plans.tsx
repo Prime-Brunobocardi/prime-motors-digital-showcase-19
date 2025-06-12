@@ -8,103 +8,160 @@ const Plans = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const clickCounterRef = useRef(0);
+  const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
   
-  const plans = [{
-    credit: "15.000,00",
-    installment: "650,00",
-    promoInstallment: "549,00",
-    duration: "48"
-  }, {
-    credit: "20.000,00",
-    installment: "870,00",
-    promoInstallment: "719,00",
-    duration: "48"
-  }, {
-    credit: "25.000,00",
-    installment: "1.080,00",
-    promoInstallment: "899,00",
-    duration: "48"
-  }, {
-    credit: "30.000,00",
-    installment: "1.250,00",
-    promoInstallment: "1.049,00",
-    duration: "48"
-  }, {
-    credit: "35.000,00",
-    installment: "1.463,00",
-    promoInstallment: "1.199,00",
-    duration: "48"
-  }, {
-    credit: "40.000,00",
-    installment: "1.672,00",
-    promoInstallment: "1.369,00",
-    duration: "48"
-  }, {
-    credit: "45.000,00",
-    installment: "1.880,00",
-    promoInstallment: "1.539,00",
-    duration: "48"
-  }, {
-    credit: "50.000,00",
-    installment: "2.089,00",
-    promoInstallment: "1.679,00",
-    duration: "48"
-  }, {
-    credit: "55.000,00",
-    installment: "2.298,00",
-    promoInstallment: "1.849,00",
-    duration: "48"
-  }, {
-    credit: "60.000,00",
-    installment: "2.508,00",
-    promoInstallment: "1.989,00",
-    duration: "48"
-  }, {
-    credit: "65.000,00",
-    installment: "2.716,00",
-    promoInstallment: "2.189,00",
-    duration: "48"
-  }, {
-    credit: "70.000,00",
-    installment: "2.925,00",
-    promoInstallment: "2.349,00",
-    duration: "48"
-  }, {
-    credit: "75.000,00",
-    installment: "3.134,00",
-    promoInstallment: "2.549,00",
-    duration: "48"
-  }, {
-    credit: "80.000,00",
-    installment: "3.280,00",
-    promoInstallment: "2.689,00",
-    duration: "48"
-  }, {
-    credit: "85.000,00",
-    installment: "3.490,00",
-    promoInstallment: "2.879,00",
-    duration: "48"
-  }, {
-    credit: "90.000,00",
-    installment: "3.690,00",
-    promoInstallment: "2.989,00",
-    duration: "48"
-  }, {
-    credit: "95.000,00",
-    installment: "3.900,00",
-    promoInstallment: "3.189,00",
-    duration: "48"
-  }, {
-    credit: "100.000,00",
-    installment: "4.100,00",
-    promoInstallment: "3.369,00",
-    duration: "48"
-  }];
+  const plans = [
+    {
+      credit: "15.000,00",
+      installment: "650,00",
+      promoInstallment: "549,00",
+      duration: "48"
+    }, {
+      credit: "20.000,00",
+      installment: "870,00",
+      promoInstallment: "719,00",
+      duration: "48"
+    }, {
+      credit: "25.000,00",
+      installment: "1.080,00",
+      promoInstallment: "899,00",
+      duration: "48"
+    }, {
+      credit: "30.000,00",
+      installment: "1.250,00",
+      promoInstallment: "1.049,00",
+      duration: "48"
+    }, {
+      credit: "35.000,00",
+      installment: "1.463,00",
+      promoInstallment: "1.199,00",
+      duration: "48"
+    }, {
+      credit: "40.000,00",
+      installment: "1.672,00",
+      promoInstallment: "1.369,00",
+      duration: "48"
+    }, {
+      credit: "45.000,00",
+      installment: "1.880,00",
+      promoInstallment: "1.539,00",
+      duration: "48"
+    }, {
+      credit: "50.000,00",
+      installment: "2.089,00",
+      promoInstallment: "1.679,00",
+      duration: "48"
+    }, {
+      credit: "55.000,00",
+      installment: "2.298,00",
+      promoInstallment: "1.849,00",
+      duration: "48"
+    }, {
+      credit: "60.000,00",
+      installment: "2.508,00",
+      promoInstallment: "1.989,00",
+      duration: "48"
+    }, {
+      credit: "65.000,00",
+      installment: "2.716,00",
+      promoInstallment: "2.189,00",
+      duration: "48"
+    }, {
+      credit: "70.000,00",
+      installment: "2.925,00",
+      promoInstallment: "2.349,00",
+      duration: "48"
+    }, {
+      credit: "75.000,00",
+      installment: "3.134,00",
+      promoInstallment: "2.549,00",
+      duration: "48"
+    }, {
+      credit: "80.000,00",
+      installment: "3.280,00",
+      promoInstallment: "2.689,00",
+      duration: "48"
+    }, {
+      credit: "85.000,00",
+      installment: "3.490,00",
+      promoInstallment: "2.879,00",
+      duration: "48"
+    }, {
+      credit: "90.000,00",
+      installment: "3.690,00",
+      promoInstallment: "2.989,00",
+      duration: "48"
+    }, {
+      credit: "95.000,00",
+      installment: "3.900,00",
+      promoInstallment: "3.189,00",
+      duration: "48"
+    }, {
+      credit: "100.000,00",
+      installment: "4.100,00",
+      promoInstallment: "3.369,00",
+      duration: "48"
+    }
+  ];
 
   const whatsappLinks = [
     "https://web.whatsapp.com/send?phone=5566992557948",
     "https://wa.me/message/GUS5BLBIHRFPE1"
   ];
+
+  // Inicializar o temporizador
+  useEffect(() => {
+    const initTimer = () => {
+      const savedStartTime = localStorage.getItem('primemotors-timer-start');
+      const now = Date.now();
+      
+      if (savedStartTime) {
+        const startTime = parseInt(savedStartTime);
+        const elapsed = now - startTime;
+        const timerDuration = 10 * 60 * 60 * 1000; // 10 horas em ms
+        const resetDuration = 60 * 60 * 1000; // 1 hora em ms
+        
+        // Se passou mais de 11 horas (10h + 1h de reset), resetar o timer
+        if (elapsed > timerDuration + resetDuration) {
+          localStorage.setItem('primemotors-timer-start', now.toString());
+          return timerDuration;
+        }
+        
+        // Se ainda está dentro das 10 horas, continuar contando
+        if (elapsed < timerDuration) {
+          return timerDuration - elapsed;
+        }
+        
+        // Se zerou mas ainda não passou o tempo de reset, manter em 0
+        return 0;
+      } else {
+        // Primeiro acesso, salvar o tempo de início
+        localStorage.setItem('primemotors-timer-start', now.toString());
+        return 10 * 60 * 60 * 1000; // 10 horas em ms
+      }
+    };
+
+    let remainingTime = initTimer();
+
+    const updateTimer = () => {
+      if (remainingTime > 0) {
+        remainingTime -= 1000;
+        
+        const hours = Math.floor(remainingTime / (1000 * 60 * 60));
+        const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+        
+        setTimeLeft({ hours, minutes, seconds });
+      } else {
+        setTimeLeft({ hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    updateTimer(); // Atualizar imediatamente
+    const interval = setInterval(updateTimer, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handlePlanClick = (plan: { credit: string; installment: string; promoInstallment: string; duration: string }) => {
     const selectedLink = whatsappLinks[clickCounterRef.current % 2];
@@ -148,6 +205,20 @@ const Plans = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             PLANOS
           </h2>
+          
+          {/* Temporizador da Oferta */}
+          <div className="mb-8">
+            <div className="bg-red-600 text-white py-4 px-6 rounded-lg mx-auto max-w-md">
+              <p className="text-lg font-bold mb-2">🔥 OFERTA ESPECIAL</p>
+              <p className="text-sm mb-2">Esta promoção termina em:</p>
+              <div className="text-2xl font-mono font-bold">
+                {String(timeLeft.hours).padStart(2, '0')}:
+                {String(timeLeft.minutes).padStart(2, '0')}:
+                {String(timeLeft.seconds).padStart(2, '0')}
+              </div>
+            </div>
+          </div>
+          
           <p className="text-xl text-gray-300 mb-12">
             Escolha o plano ideal pra você
           </p>
