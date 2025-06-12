@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -14,7 +13,7 @@ const FAQ = () => {
     },
     {
       question: "2. É um consórcio?",
-      answer: "Não! É muito melhor! No Compra Programada as parcelas são fixas até o final do plano e você sabe exatamente quando vai retirar seu carro, após o pagamento das 12 primeiras sem depender de sorteios ou lances em dinheiro."
+      answer: "Não! É muito melhor! No Compra Programada as parcelas são flexíveis até o final do plano e você sabe exatamente quando vai retirar seu carro, após o pagamento das 12 primeiras sem depender de sorteios ou lances em dinheiro."
     },
     {
       question: "3. Posso mudar o plano da Compra Programada após ter iniciado o contrato?",
