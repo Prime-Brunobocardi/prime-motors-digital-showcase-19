@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Calendar, Car, Shield, CreditCard } from "lucide-react";
 const Hero = () => {
@@ -55,7 +56,7 @@ const Hero = () => {
             animationDelay: '0.3s'
           }}>
               <Car className="w-8 h-8 text-primary mx-auto mb-2" />
-              <p className="text-white text-sm">Parcelas Flexíveis </p>
+              <p className="text-white text-sm">Parcelas Flexíveis</p>
             </div>
           </div>
         </div>
