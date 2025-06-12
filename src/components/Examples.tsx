@@ -1,9 +1,6 @@
-
 import { Card } from "@/components/ui/card";
-
 const Examples = () => {
-  return (
-    <section className="py-20 bg-gray-50">
+  return <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
@@ -48,9 +45,7 @@ const Examples = () => {
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🏆</span>
                 </div>
-                <p className="text-gray-700">
-                  Agora ele já está com seu carro novo na garagem e pagando as 36 parcelas fixas restantes do plano
-                </p>
+                <p className="text-gray-700">Agora ele já está com seu carro novo na garagem e pagando as 36 parcelas fixas restantes do plano</p>
               </div>
             </div>
           </Card>
@@ -138,8 +133,6 @@ const Examples = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Examples;
