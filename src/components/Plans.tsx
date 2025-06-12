@@ -1,5 +1,3 @@
-
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -14,74 +12,92 @@ const Plans = () => {
   const plans = [{
     credit: "15.000,00",
     installment: "650,00",
+    promoInstallment: "549,00",
     duration: "48"
   }, {
     credit: "20.000,00",
     installment: "870,00",
+    promoInstallment: "719,00",
     duration: "48"
   }, {
     credit: "25.000,00",
     installment: "1.080,00",
+    promoInstallment: "899,00",
     duration: "48"
   }, {
     credit: "30.000,00",
     installment: "1.250,00",
+    promoInstallment: "1.049,00",
     duration: "48"
   }, {
     credit: "35.000,00",
     installment: "1.463,00",
+    promoInstallment: "1.199,00",
     duration: "48"
   }, {
     credit: "40.000,00",
     installment: "1.672,00",
+    promoInstallment: "1.369,00",
     duration: "48"
   }, {
     credit: "45.000,00",
     installment: "1.880,00",
+    promoInstallment: "1.539,00",
     duration: "48"
   }, {
     credit: "50.000,00",
     installment: "2.089,00",
+    promoInstallment: "1.679,00",
     duration: "48"
   }, {
     credit: "55.000,00",
     installment: "2.298,00",
+    promoInstallment: "1.849,00",
     duration: "48"
   }, {
     credit: "60.000,00",
     installment: "2.508,00",
+    promoInstallment: "1.989,00",
     duration: "48"
   }, {
     credit: "65.000,00",
     installment: "2.716,00",
+    promoInstallment: "2.189,00",
     duration: "48"
   }, {
     credit: "70.000,00",
     installment: "2.925,00",
+    promoInstallment: "2.349,00",
     duration: "48"
   }, {
     credit: "75.000,00",
     installment: "3.134,00",
+    promoInstallment: "2.549,00",
     duration: "48"
   }, {
     credit: "80.000,00",
     installment: "3.280,00",
+    promoInstallment: "2.689,00",
     duration: "48"
   }, {
     credit: "85.000,00",
     installment: "3.490,00",
+    promoInstallment: "2.879,00",
     duration: "48"
   }, {
     credit: "90.000,00",
     installment: "3.690,00",
+    promoInstallment: "2.989,00",
     duration: "48"
   }, {
     credit: "95.000,00",
     installment: "3.900,00",
+    promoInstallment: "3.189,00",
     duration: "48"
   }, {
     credit: "100.000,00",
     installment: "4.100,00",
+    promoInstallment: "3.369,00",
     duration: "48"
   }];
 
@@ -90,11 +106,11 @@ const Plans = () => {
     "https://wa.me/message/GUS5BLBIHRFPE1"
   ];
 
-  const handlePlanClick = (plan: { credit: string; installment: string; duration: string }) => {
+  const handlePlanClick = (plan: { credit: string; installment: string; promoInstallment: string; duration: string }) => {
     const selectedLink = whatsappLinks[clickCounterRef.current % 2];
     clickCounterRef.current++;
     
-    const message = `Olá! Tenho interesse no plano de R$ ${plan.credit} com parcelas de R$ ${plan.installment} em ${plan.duration} meses. Gostaria de mais informações!`;
+    const message = `Olá! Tenho interesse no plano promocional de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações!`;
     const encodedMessage = encodeURIComponent(message);
     
     const linkWithMessage = selectedLink.includes('web.whatsapp.com') 
@@ -156,9 +172,14 @@ const Plans = () => {
                             <p className="bg-black text-white px-3 py-1 rounded text-sm font-bold">
                               PARCELA
                             </p>
-                            <p className="text-primary font-bold mt-2">
-                              R$ {plan.installment}
-                            </p>
+                            <div className="mt-2">
+                              <p className="text-green-500 font-bold text-lg">
+                                R$ {plan.promoInstallment}
+                              </p>
+                              <p className="text-gray-400 line-through text-sm">
+                                R$ {plan.installment}
+                              </p>
+                            </div>
                             <p className="text-gray-400 text-xs">POR MÊS</p>
                           </div>
                           <div className="text-center">
