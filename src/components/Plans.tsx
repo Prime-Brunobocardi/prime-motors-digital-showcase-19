@@ -193,7 +193,7 @@ const Plans = () => {
       } else {
         api.scrollTo(0);
       }
-    }, 3000); // 3 second delay
+    }, 8000); // 8 second delay
 
     return () => clearInterval(interval);
   }, [api]);
