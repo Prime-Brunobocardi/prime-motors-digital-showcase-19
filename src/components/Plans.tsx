@@ -9,6 +9,7 @@ const Plans = () => {
   const [current, setCurrent] = useState(0);
   const clickCounterRef = useRef(0);
   const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
+  const [isPaused, setIsPaused] = useState(false);
   
   const plans = [
     {
@@ -196,17 +197,19 @@ const Plans = () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
 
-    // Auto-play with loop effect
+    // Auto-play with loop effect - only when not paused
     const interval = setInterval(() => {
-      if (api.canScrollNext()) {
-        api.scrollNext();
-      } else {
-        api.scrollTo(0);
+      if (!isPaused) {
+        if (api.canScrollNext()) {
+          api.scrollNext();
+        } else {
+          api.scrollTo(0);
+        }
       }
     }, 8000); // 8 second delay
 
     return () => clearInterval(interval);
-  }, [api]);
+  }, [api, isPaused]);
   
   return (
     <section id="planos" className="py-20 bg-black text-white">
@@ -241,7 +244,13 @@ const Plans = () => {
               <CarouselContent className="-ml-2 md:-ml-4">
                 {plans.map((plan, index) => (
                   <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                    <Card className="bg-gray-800 border-gray-700 p-6 card-hover h-full">
+                    <Card 
+                      className="bg-gray-800 border-gray-700 p-6 card-hover h-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20"
+                      onMouseEnter={() => setIsPaused(true)}
+                      onMouseLeave={() => setIsPaused(false)}
+                      onTouchStart={() => setIsPaused(true)}
+                      onTouchEnd={() => setIsPaused(false)}
+                    >
                       <div className="text-center">
                         <p className="text-gray-400 text-sm mb-2">VALOR DO CRÉDITO</p>
                         <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
