@@ -13,103 +13,103 @@ const Plans = () => {
   const plans = [
     {
       credit: "15.000,00",
-      installment: "595,70",
-      promoInstallment: "549,00",
+      installment: "650,00",
+      promoInstallment: "595,70",
       duration: "48"
     }, {
       credit: "20.000,00",
-      installment: "799,51",
-      promoInstallment: "719,00",
+      installment: "870,00",
+      promoInstallment: "799,51",
       duration: "48"
     }, {
       credit: "25.000,00",
-      installment: "985,45",
-      promoInstallment: "899,00",
+      installment: "1.080,00",
+      promoInstallment: "985,45",
       duration: "48"
     }, {
       credit: "30.000,00",
-      installment: "1.172,38",
-      promoInstallment: "1.049,00",
+      installment: "1.250,00",
+      promoInstallment: "1.172,38",
       duration: "48"
     }, {
       credit: "35.000,00",
-      installment: "1.357,32",
-      promoInstallment: "1.199,00",
+      installment: "1.463,00",
+      promoInstallment: "1.357,32",
       duration: "48"
     }, {
       credit: "40.000,00",
-      installment: "1.543,25",
-      promoInstallment: "1.369,00",
+      installment: "1.672,00",
+      promoInstallment: "1.543,25",
       duration: "48"
     }, {
       credit: "45.000,00",
-      installment: "1.747,78",
-      promoInstallment: "1.539,00",
+      installment: "1.880,00",
+      promoInstallment: "1.747,78",
       duration: "48"
     }, {
       credit: "50.000,00",
-      installment: "1.933,71",
-      promoInstallment: "1.679,00",
+      installment: "2.089,00",
+      promoInstallment: "1.933,71",
       duration: "48"
     }, {
       credit: "55.000,00",
-      installment: "2.119,65",
-      promoInstallment: "1.849,00",
+      installment: "2.298,00",
+      promoInstallment: "2.119,65",
       duration: "48"
     }, {
       credit: "60.000,00",
-      installment: "2.305,58",
-      promoInstallment: "1.989,00",
+      installment: "2.508,00",
+      promoInstallment: "2.305,58",
       duration: "48"
     }, {
       credit: "65.000,00",
-      installment: "2.491,51",
-      promoInstallment: "2.189,00",
+      installment: "2.716,00",
+      promoInstallment: "2.491,51",
       duration: "48"
     }, {
       credit: "70.000,00",
-      installment: "2.677,45",
-      promoInstallment: "2.349,00",
+      installment: "2.925,00",
+      promoInstallment: "2.677,45",
       duration: "48"
     }, {
       credit: "75.000,00",
-      installment: "2.863,38",
-      promoInstallment: "2.549,00",
+      installment: "3.134,00",
+      promoInstallment: "2.863,38",
       duration: "48"
     }, {
       credit: "80.000,00",
-      installment: "3.067,91",
-      promoInstallment: "2.689,00",
+      installment: "3.280,00",
+      promoInstallment: "3.067,91",
       duration: "48"
     }, {
       credit: "85.000,00",
-      installment: "3.253,84",
-      promoInstallment: "2.879,00",
+      installment: "3.490,00",
+      promoInstallment: "3.253,84",
       duration: "48"
     }, {
       credit: "90.000,00",
-      installment: "3.439,78",
-      promoInstallment: "2.989,00",
+      installment: "3.690,00",
+      promoInstallment: "3.439,78",
       duration: "48"
     }, {
       credit: "95.000,00",
-      installment: "3.635,71",
-      promoInstallment: "3.189,00",
+      installment: "3.900,00",
+      promoInstallment: "3.635,71",
       duration: "48"
     }, {
       credit: "100.000,00",
-      installment: "3.811,64",
-      promoInstallment: "3.369,00",
+      installment: "4.100,00",
+      promoInstallment: "3.811,64",
       duration: "48"
     }, {
       credit: "110.000,00",
-      installment: "4.183,51",
-      promoInstallment: "3.689,00",
+      installment: "4.601,86",
+      promoInstallment: "4.183,51",
       duration: "48"
     }, {
       credit: "120.000,00",
-      installment: "4.555,38",
-      promoInstallment: "3.999,00",
+      installment: "5.010,92",
+      promoInstallment: "4.555,38",
       duration: "48"
     }
   ];
