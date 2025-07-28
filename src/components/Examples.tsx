@@ -46,7 +46,7 @@ const Examples = () => {
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🏆</span>
                 </div>
-                <p className="text-gray-700">Agora ele já está com seu carro novo na garagem e pagando as 36 parcelas flexível restantes do plano</p>
+                <p className="text-gray-700">Agora ele já está com seu carro novo na garagem e pagando as 48 parcelas flexível restantes do plano</p>
               </div>
             </div>
           </Card>
@@ -90,7 +90,7 @@ const Examples = () => {
                   <span className="text-2xl">🏆</span>
                 </div>
                 <p className="text-gray-700">
-                  Agora ele já está com seu carro novo na garagem e pagando as 36 parcelas flexível restantes do plano
+                  Agora ele já está com seu carro novo na garagem e pagando as 48 parcelas flexível restantes do plano
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ const Examples = () => {
                   <span className="text-2xl md:text-3xl">🚗</span>
                 </div>
                 <p className="font-bold text-gray-900 text-sm md:text-base">CARRO NOVO</p>
-                <p className="text-primary font-bold text-sm md:text-base">36 Parcelas</p>
+                <p className="text-primary font-bold text-sm md:text-base">48 Parcelas</p>
               </div>
               
               <div className="text-2xl md:text-4xl text-gray-400 rotate-90 md:rotate-0">=</div>

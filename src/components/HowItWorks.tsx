@@ -24,7 +24,7 @@ const HowItWorks = () => {
     {
       number: "4",
       title: "SEU CARRO NOVO",
-      description: "Já com o carro, você continua pagando as 36 parcelas restantes até quitar o contrato!",
+      description: "Já com o carro, você continua pagando as 48 parcelas restantes até quitar o contrato!",
       color: "bg-red-500"
     }
   ];
