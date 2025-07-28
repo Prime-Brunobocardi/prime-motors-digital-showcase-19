@@ -248,16 +248,15 @@ const Plans = () => {
             PLANOS
           </h2>
           
-          {/* Temporizador da Oferta */}
+          {/* Nova Modalidade */}
           <div className="mb-8">
-            <div className="bg-red-600 text-white py-4 px-6 rounded-lg mx-auto max-w-md">
-              <p className="text-lg font-bold mb-2">🔥 OFERTA ESPECIAL</p>
-              <p className="text-sm mb-2">Esta promoção termina em:</p>
-              <div className="text-2xl font-mono font-bold">
-                {String(timeLeft.hours).padStart(2, '0')}:
-                {String(timeLeft.minutes).padStart(2, '0')}:
-                {String(timeLeft.seconds).padStart(2, '0')}
+            <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white py-4 px-6 rounded-lg mx-auto max-w-lg">
+              <p className="text-lg font-bold mb-2">✅ COMPRA PROGRAMADA RENOVADA</p>
+              <p className="text-sm mb-2">Agora mais acessível com parcelamento em</p>
+              <div className="text-2xl font-bold">
+                60 MESES
               </div>
+              <p className="text-xs mt-1 opacity-90">Facilite seu sonho automotivo</p>
             </div>
           </div>
           
