@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Já pensou em adquirir o seu veículo em até <strong className="text-primary">48 meses</strong> sem ter que dar nada de entrada e sem análise de crédito?
+            Já pensou em adquirir o seu veículo em até <strong className="text-primary">60 meses</strong> sem ter que dar nada de entrada e sem análise de crédito?
           </p>
           
           <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 md:p-8 mb-8 max-w-4xl mx-auto border border-gray-700">
@@ -50,7 +50,7 @@ const Hero = () => {
             animationDelay: '0.2s'
           }}>
               <Calendar className="w-8 h-8 text-primary mx-auto mb-2" />
-              <p className="text-white text-sm">Até 48 Meses</p>
+              <p className="text-white text-sm">Até 60 Meses</p>
             </div>
             <div className="text-center animate-bounce-in" style={{
             animationDelay: '0.3s'
