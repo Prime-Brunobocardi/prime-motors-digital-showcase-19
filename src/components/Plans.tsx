@@ -14,104 +14,133 @@ const Plans = () => {
   const plans = [
     {
       credit: "15.000,00",
-      installment: "650,00",
-      promoInstallment: "595,70",
-      duration: "48"
-    }, {
+      promoInstallment: "510,83",
+      duration: "60"
+    },
+    {
+      credit: "18.000,00", 
+      promoInstallment: "600,61",
+      duration: "60"
+    },
+    {
       credit: "20.000,00",
-      installment: "870,00",
-      promoInstallment: "799,51",
-      duration: "48"
-    }, {
+      promoInstallment: "670,46",
+      duration: "60"
+    },
+    {
+      credit: "23.000,00",
+      promoInstallment: "766,24",
+      duration: "60"
+    },
+    {
       credit: "25.000,00",
-      installment: "1.080,00",
-      promoInstallment: "985,45",
-      duration: "48"
-    }, {
+      promoInstallment: "830,10",
+      duration: "60"
+    },
+    {
+      credit: "28.000,00",
+      promoInstallment: "893,67",
+      duration: "60"
+    },
+    {
       credit: "30.000,00",
-      installment: "1.250,00",
-      promoInstallment: "1.172,38",
-      duration: "48"
-    }, {
+      promoInstallment: "943,95",
+      duration: "60"
+    },
+    {
+      credit: "33.000,00",
+      promoInstallment: "1.022,93",
+      duration: "60"
+    },
+    {
       credit: "35.000,00",
-      installment: "1.463,00",
-      promoInstallment: "1.357,32",
-      duration: "48"
-    }, {
+      promoInstallment: "1.067,49",
+      duration: "60"
+    },
+    {
+      credit: "38.000,00",
+      promoInstallment: "1.156,45",
+      duration: "60"
+    },
+    {
       credit: "40.000,00",
-      installment: "1.672,00",
-      promoInstallment: "1.543,25",
-      duration: "48"
-    }, {
+      promoInstallment: "1.215,75",
+      duration: "60"
+    },
+    {
+      credit: "43.000,00",
+      promoInstallment: "1.304,71",
+      duration: "60"
+    },
+    {
       credit: "45.000,00",
-      installment: "1.880,00",
-      promoInstallment: "1.747,78",
-      duration: "48"
-    }, {
+      promoInstallment: "1.364,01",
+      duration: "60"
+    },
+    {
+      credit: "48.000,00",
+      promoInstallment: "1.452,97",
+      duration: "60"
+    },
+    {
       credit: "50.000,00",
-      installment: "2.089,00",
-      promoInstallment: "1.933,71",
-      duration: "48"
-    }, {
+      promoInstallment: "1.512,28",
+      duration: "60"
+    },
+    {
+      credit: "53.000,00",
+      promoInstallment: "1.601,23",
+      duration: "60"
+    },
+    {
       credit: "55.000,00",
-      installment: "2.298,00",
-      promoInstallment: "2.119,65",
-      duration: "48"
-    }, {
+      promoInstallment: "1.660,54",
+      duration: "60"
+    },
+    {
+      credit: "58.000,00",
+      promoInstallment: "1.749,50",
+      duration: "60"
+    },
+    {
       credit: "60.000,00",
-      installment: "2.508,00",
-      promoInstallment: "2.305,58",
-      duration: "48"
-    }, {
+      promoInstallment: "1.808,80",
+      duration: "60"
+    },
+    {
       credit: "65.000,00",
-      installment: "2.716,00",
-      promoInstallment: "2.491,51",
-      duration: "48"
-    }, {
+      promoInstallment: "1.957,06",
+      duration: "60"
+    },
+    {
       credit: "70.000,00",
-      installment: "2.925,00",
-      promoInstallment: "2.677,45",
-      duration: "48"
-    }, {
+      promoInstallment: "2.105,33",
+      duration: "60"
+    },
+    {
       credit: "75.000,00",
-      installment: "3.134,00",
-      promoInstallment: "2.863,38",
-      duration: "48"
-    }, {
+      promoInstallment: "2.253,59",
+      duration: "60"
+    },
+    {
       credit: "80.000,00",
-      installment: "3.280,00",
-      promoInstallment: "3.067,91",
-      duration: "48"
-    }, {
+      promoInstallment: "2.401,85",
+      duration: "60"
+    },
+    {
       credit: "85.000,00",
-      installment: "3.490,00",
-      promoInstallment: "3.253,84",
-      duration: "48"
-    }, {
+      promoInstallment: "2.550,11",
+      duration: "60"
+    },
+    {
       credit: "90.000,00",
-      installment: "3.690,00",
-      promoInstallment: "3.439,78",
-      duration: "48"
-    }, {
-      credit: "95.000,00",
-      installment: "3.900,00",
-      promoInstallment: "3.635,71",
-      duration: "48"
-    }, {
+      promoInstallment: "2.698,38",
+      duration: "60"
+    },
+    {
       credit: "100.000,00",
-      installment: "4.100,00",
-      promoInstallment: "3.811,64",
-      duration: "48"
-    }, {
-      credit: "110.000,00",
-      installment: "4.601,86",
-      promoInstallment: "4.183,51",
-      duration: "48"
-    }, {
-      credit: "120.000,00",
-      installment: "5.010,92",
-      promoInstallment: "4.555,38",
-      duration: "48"
+      promoInstallment: "2.994,90",
+      duration: "60"
     }
   ];
 
@@ -174,7 +203,7 @@ const Plans = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handlePlanClick = (plan: { credit: string; installment: string; promoInstallment: string; duration: string }) => {
+  const handlePlanClick = (plan: { credit: string; promoInstallment: string; duration: string }) => {
     const selectedLink = whatsappLinks[clickCounterRef.current % 2];
     clickCounterRef.current++;
     
@@ -262,14 +291,11 @@ const Plans = () => {
                             <p className="bg-black text-white px-3 py-1 rounded text-sm font-bold">
                               PARCELA
                             </p>
-                            <div className="mt-2">
-                              <p className="text-green-500 font-bold text-lg">
-                                R$ {plan.promoInstallment}
-                              </p>
-                              <p className="text-gray-400 line-through text-sm">
-                                R$ {plan.installment}
-                              </p>
-                            </div>
+                             <div className="mt-2">
+                               <p className="text-green-500 font-bold text-lg">
+                                 R$ {plan.promoInstallment}
+                               </p>
+                             </div>
                             <p className="text-gray-400 text-xs">POR MÊS</p>
                           </div>
                           <div className="text-center">
