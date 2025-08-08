@@ -23,7 +23,7 @@ const Contact = () => {
 
   const whatsappLinks = [
     "https://web.whatsapp.com/send?phone=5565993119620",
-    "https://web.whatsapp.com/send?phone=5565993119620"
+    "https://wa.me/5566992557948"
   ];
 
   let clickCounter = 0;
