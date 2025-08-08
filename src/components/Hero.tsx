@@ -29,7 +29,7 @@ const Hero = () => {
               A Prime Motors tem a solução pra você! Agora você pode programar a compra do seu veículo dos sonhos com parcelas que cabem no seu bolso!
             </p>
             
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-2xl" onClick={() => window.open('https://web.whatsapp.com/send?phone=5565993119620', '_blank')}>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-2xl" onClick={() => window.open('https://wa.me/5566992557948', '_blank')}>
               CLIQUE AQUI E SAIBA MAIS!
             </Button>
           </div>
