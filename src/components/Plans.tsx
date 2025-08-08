@@ -145,8 +145,8 @@ const Plans = () => {
   ];
 
   const whatsappLinks = [
-    "https://web.whatsapp.com/send?phone=5566992557948",
-    "https://wa.me/message/GUS5BLBIHRFPE1"
+    "https://web.whatsapp.com/send?phone=5565993119620",
+    "https://web.whatsapp.com/send?phone=5565993119620"
   ];
 
   // Inicializar o temporizador
