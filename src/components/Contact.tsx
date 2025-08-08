@@ -16,7 +16,7 @@ const Contact = () => {
       name: "PRIME LUCAS",
       color: "bg-red-500",
       consultors: [
-        { name: "Hygor", phone: "(65) 9276-9357" }
+        { name: "Hygor", phone: "(65) 99311-9620" }
       ]
     }
   ];

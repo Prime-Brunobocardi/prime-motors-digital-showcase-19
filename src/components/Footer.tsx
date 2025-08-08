@@ -29,7 +29,7 @@ const Footer = () => {
               <div>
                 <h4 className="font-bold mb-4">Contato</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li>(65) 9278-2092</li>
+                  <li>(65) 99311-9620</li>
                   <li>primemotorsmtmarketing@gmail.com</li>
                   <li className="mt-4">
                     <h5 className="font-semibold text-white mb-2">Atendemos em:</h5>
