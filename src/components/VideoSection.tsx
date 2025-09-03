@@ -12,7 +12,7 @@ const VideoSection = () => {
       thumbnail: "/lovable-uploads/2aebabe2-95be-41bb-82c4-bd513e2feaaf.png",
       platform: "Instagram",
       icon: Instagram,
-      link: "https://www.instagram.com/reel/DKkm_GPuM4k/?igsh=YnNsNXZxc3B0Y3Mw",
+      link: "https://www.instagram.com/reel/DN5kfl3DVX_/?utm_source=ig_web_copy_link&igsh=ZWcyeWNtcnZ2eDlo",
       embedId: "",
     },
     {
