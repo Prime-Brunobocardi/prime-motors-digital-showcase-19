@@ -14,132 +14,82 @@ const Plans = () => {
   const plans = [
     {
       credit: "15.000,00",
-      promoInstallment: "510,83",
-      duration: "60"
-    },
-    {
-      credit: "18.000,00", 
-      promoInstallment: "600,61",
+      promoInstallment: "520,00",
       duration: "60"
     },
     {
       credit: "20.000,00",
-      promoInstallment: "670,46",
-      duration: "60"
-    },
-    {
-      credit: "23.000,00",
-      promoInstallment: "766,24",
+      promoInstallment: "670,00",
       duration: "60"
     },
     {
       credit: "25.000,00",
-      promoInstallment: "830,10",
-      duration: "60"
-    },
-    {
-      credit: "28.000,00",
-      promoInstallment: "893,67",
+      promoInstallment: "830,00",
       duration: "60"
     },
     {
       credit: "30.000,00",
-      promoInstallment: "943,95",
-      duration: "60"
-    },
-    {
-      credit: "33.000,00",
-      promoInstallment: "1.022,93",
+      promoInstallment: "950,00",
       duration: "60"
     },
     {
       credit: "35.000,00",
-      promoInstallment: "1.067,49",
-      duration: "60"
-    },
-    {
-      credit: "38.000,00",
-      promoInstallment: "1.156,45",
+      promoInstallment: "1.080,00",
       duration: "60"
     },
     {
       credit: "40.000,00",
-      promoInstallment: "1.215,75",
-      duration: "60"
-    },
-    {
-      credit: "43.000,00",
-      promoInstallment: "1.304,71",
+      promoInstallment: "1.230,00",
       duration: "60"
     },
     {
       credit: "45.000,00",
-      promoInstallment: "1.364,01",
-      duration: "60"
-    },
-    {
-      credit: "48.000,00",
-      promoInstallment: "1.452,97",
+      promoInstallment: "1.350,00",
       duration: "60"
     },
     {
       credit: "50.000,00",
-      promoInstallment: "1.512,28",
-      duration: "60"
-    },
-    {
-      credit: "53.000,00",
-      promoInstallment: "1.601,23",
+      promoInstallment: "1.500,00",
       duration: "60"
     },
     {
       credit: "55.000,00",
-      promoInstallment: "1.660,54",
-      duration: "60"
-    },
-    {
-      credit: "58.000,00",
-      promoInstallment: "1.749,50",
+      promoInstallment: "1.670,00",
       duration: "60"
     },
     {
       credit: "60.000,00",
-      promoInstallment: "1.808,80",
+      promoInstallment: "1.850,00",
       duration: "60"
     },
     {
       credit: "65.000,00",
-      promoInstallment: "1.957,06",
+      promoInstallment: "2.000,00",
       duration: "60"
     },
     {
       credit: "70.000,00",
-      promoInstallment: "2.105,33",
+      promoInstallment: "2.150,00",
       duration: "60"
     },
     {
       credit: "75.000,00",
-      promoInstallment: "2.253,59",
+      promoInstallment: "2.250,00",
       duration: "60"
     },
     {
       credit: "80.000,00",
-      promoInstallment: "2.401,85",
-      duration: "60"
-    },
-    {
-      credit: "85.000,00",
-      promoInstallment: "2.550,11",
+      promoInstallment: "2.400,00",
       duration: "60"
     },
     {
       credit: "90.000,00",
-      promoInstallment: "2.698,38",
+      promoInstallment: "2.700,00",
       duration: "60"
     },
     {
       credit: "100.000,00",
-      promoInstallment: "2.994,90",
+      promoInstallment: "3.000,00",
       duration: "60"
     }
   ];
