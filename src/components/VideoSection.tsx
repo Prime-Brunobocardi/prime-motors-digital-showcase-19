@@ -17,7 +17,7 @@ const VideoSection = () => {
     },
     {
       id: "instagram-2",
-      title: "Depoimentos de Clientes Satisfeitos",
+      title: "Dicas Rápidas sobre Compra Programada",
       description: "Conheça histórias reais de quem conquistou o carro dos sonhos",
       thumbnail: "/lovable-uploads/ae625cfa-9855-4a05-8131-1523c92452e4.png",
       platform: "Instagram",
@@ -27,7 +27,7 @@ const VideoSection = () => {
     },
     {
       id: "instagram-3",
-      title: "Dicas Rápidas sobre Compra Programada",
+      title: "Depoimentos de Clientes Satisfeitos",
       description: "Tudo que você precisa saber em poucos minutos",
       thumbnail: "/lovable-uploads/95d4c741-9178-4bc0-b084-d455e056bdeb.png",
       platform: "Instagram",
