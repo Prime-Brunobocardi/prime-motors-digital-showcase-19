@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 const Examples = () => {
   return <section className="py-20 bg-gray-50">
@@ -89,9 +88,7 @@ const Examples = () => {
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🏆</span>
                 </div>
-                <p className="text-gray-700">
-                  Agora ele já está com seu carro novo na garagem e pagando as 48 parcelas flexível restantes do plano
-                </p>
+                <p className="text-gray-700">Agora ele já está com seu carro novo na garagem e pagando as 60 parcelas flexível restantes do plano</p>
               </div>
             </div>
           </Card>
