@@ -32,7 +32,7 @@ const VideoSection = () => {
       thumbnail: "/lovable-uploads/0b9066e4-a44c-41c6-8bb4-088203d04846.png",
       platform: "Instagram",
       icon: Instagram,
-      link: "https://www.instagram.com/reel/DKYN0Znu17Z/?igsh=MWt6djk5NHVwbDloNQ==",
+      link: "https://www.instagram.com/primemotorsmt/reel/DOHcuC0DYgp/",
       embedId: "",
     }
   ];
