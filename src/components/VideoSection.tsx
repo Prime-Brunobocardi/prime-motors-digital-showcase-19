@@ -29,7 +29,7 @@ const VideoSection = () => {
       id: "instagram-3",
       title: "Dicas Rápidas sobre Compra Programada",
       description: "Tudo que você precisa saber em poucos minutos",
-      thumbnail: "/lovable-uploads/0b9066e4-a44c-41c6-8bb4-088203d04846.png",
+      thumbnail: "/lovable-uploads/95d4c741-9178-4bc0-b084-d455e056bdeb.png",
       platform: "Instagram",
       icon: Instagram,
       link: "https://www.instagram.com/primemotorsmt/reel/DOHcuC0DYgp/",
