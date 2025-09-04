@@ -9,7 +9,7 @@ const VideoSection = () => {
       id: "instagram-1",
       title: "Como Funciona a Compra Programada",
       description: "Veja como é simples adquirir seu veículo sem entrada e sem análise de crédito",
-      thumbnail: "/lovable-uploads/2aebabe2-95be-41bb-82c4-bd513e2feaaf.png",
+      thumbnail: "/lovable-uploads/5a6bc63b-d069-4eed-9c24-87f90d955a47.png",
       platform: "Instagram",
       icon: Instagram,
       link: "https://www.instagram.com/reel/DN5kfl3DVX_/",
