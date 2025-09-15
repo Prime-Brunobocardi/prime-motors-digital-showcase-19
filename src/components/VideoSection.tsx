@@ -19,10 +19,10 @@ const VideoSection = () => {
       id: "instagram-2",
       title: "Depoimentos de Clientes Satisfeitos",
       description: "Conheça histórias reais de quem conquistou o carro dos sonhos",
-      thumbnail: "/lovable-uploads/ae625cfa-9855-4a05-8131-1523c92452e4.png",
+      thumbnail: "/lovable-uploads/video-thumbnail-middle.jpg",
       platform: "Instagram",
       icon: Instagram,
-      link: "https://www.instagram.com/reel/DKeuFp_uL5O/?igsh=b2FyajR5cGFicWo4",
+      link: "https://www.instagram.com/reel/DOhAmq1kYxl/",
       embedId: "",
     },
     {
