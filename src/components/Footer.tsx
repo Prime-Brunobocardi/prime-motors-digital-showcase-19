@@ -35,7 +35,7 @@ const Footer = () => {
                       <div>📍 Sorriso</div>
                       <div>📍 Lucas do Rio Verde</div>
                       <div>📍 Cuiabá</div>
-                      <div>(66) 99311-9620</div>
+                      <div>(66) 99255-7948</div>
                     </div>
                   </li>
                 </ul>
