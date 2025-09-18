@@ -141,7 +141,7 @@ const Plans = () => {
   }) => {
     const selectedLink = whatsappLinks[clickCounterRef.current % 2];
     clickCounterRef.current++;
-    const message = `Olá! Tenho interesse no plano promocional de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações!`;
+    const message = `Parabéns!! seu credito da compra programada já esta *APROVADA*, você escolheu o credito de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações?`;
     const encodedMessage = encodeURIComponent(message);
     const linkWithMessage = selectedLink.includes('web.whatsapp.com') ? `${selectedLink}&text=${encodedMessage}` : `${selectedLink}?text=${encodedMessage}`;
     window.open(linkWithMessage, '_blank');
