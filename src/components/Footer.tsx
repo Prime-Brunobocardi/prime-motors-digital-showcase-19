@@ -1,7 +1,5 @@
-
 const Footer = () => {
-  return (
-    <footer className="bg-black text-white py-12">
+  return <footer className="bg-black text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8">
@@ -37,7 +35,7 @@ const Footer = () => {
                       <div>📍 Sorriso</div>
                       <div>📍 Lucas do Rio Verde</div>
                       <div>📍 Cuiabá</div>
-                      <div>📍 Feliz Natal</div>
+                      <div>(66) 99311-9620</div>
                     </div>
                   </li>
                 </ul>
@@ -64,8 +62,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
