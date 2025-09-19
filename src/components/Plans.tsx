@@ -138,9 +138,9 @@ const Plans = () => {
     credit: string;
     promoInstallment: string;
     duration: string;
-  }) => {
-    // Usar sempre o primeiro link para consistência
-    const selectedLink = whatsappLinks[0];
+  }, planIndex: number) => {
+    // Alternar entre os dois números baseado no índice do plano
+    const selectedLink = whatsappLinks[planIndex % 2];
     const message = `Parabéns!! seu credito da compra programada já esta *APROVADA*, você escolheu o credito de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações?`;
     const encodedMessage = encodeURIComponent(message);
     const linkWithMessage = selectedLink.includes('web.whatsapp.com') ? `${selectedLink}&text=${encodedMessage}` : `${selectedLink}?text=${encodedMessage}`;
@@ -228,7 +228,7 @@ const Plans = () => {
                           </div>
                         </div>
                         
-                        <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3" onClick={() => handlePlanClick(plan)}>
+                        <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3" onClick={() => handlePlanClick(plan, index)}>
                           🖱️ QUERO ESSE PLANO
                         </Button>
                       </div>
