@@ -146,7 +146,7 @@ const Plans = () => {
     // Debug: verificar qual número está sendo usado
     console.log(`Plano ${planIndex + 1}: Usando WhatsApp ${linkIndex + 1} - ${selectedLink}`);
     
-    const message = `Parabéns!! seu credito da compra programada já esta *APROVADA*, você escolheu o credito de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações?`;
+    const message = `Parabéns!! *SEU CRÉDITO* da Compra Programada já está *APROVADO!* Você escolheu o crédito de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações?`;
     const encodedMessage = encodeURIComponent(message);
     const linkWithMessage = selectedLink.includes('web.whatsapp.com') ? `${selectedLink}&text=${encodedMessage}` : `${selectedLink}?text=${encodedMessage}`;
     window.open(linkWithMessage, '_blank');
