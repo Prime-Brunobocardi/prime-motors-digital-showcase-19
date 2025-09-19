@@ -150,7 +150,7 @@ const Plans = () => {
     
     const message = `Parabéns!! *SEU CRÉDITO* da Compra Programada já está *APROVADO!* Você escolheu o crédito de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações?`;
     const encodedMessage = encodeURIComponent(message);
-    const linkWithMessage = selectedLink.includes('web.whatsapp.com') ? `${selectedLink}&text=${encodedMessage}` : `selectedLink}?text=${encodedMessage}`;
+    const linkWithMessage = selectedLink.includes('web.whatsapp.com') ? `${selectedLink}&text=${encodedMessage}` : `${selectedLink}?text=${encodedMessage}`;
     
     console.log(`Link final: ${linkWithMessage}`);
     window.open(linkWithMessage, '_blank');
