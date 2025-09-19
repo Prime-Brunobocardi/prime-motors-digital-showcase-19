@@ -139,16 +139,20 @@ const Plans = () => {
     promoInstallment: string;
     duration: string;
   }, planIndex: number) => {
-    // Alternar entre os dois números baseado no índice do plano
+    // Alternar entre os dois números: planos ímpares (1°, 3°, 5°...) usam primeiro número
+    // planos pares (2°, 4°, 6°...) usam segundo número
     const linkIndex = planIndex % 2;
     const selectedLink = whatsappLinks[linkIndex];
     
     // Debug: verificar qual número está sendo usado
-    console.log(`Plano ${planIndex + 1}: Usando WhatsApp ${linkIndex + 1} - ${selectedLink}`);
+    console.log(`Plano ${planIndex + 1} (índice ${planIndex}): linkIndex ${linkIndex} - Usando WhatsApp ${linkIndex === 0 ? '1' : '2'}`);
+    console.log(`Link selecionado: ${selectedLink}`);
     
     const message = `Parabéns!! *SEU CRÉDITO* da Compra Programada já está *APROVADO!* Você escolheu o crédito de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações?`;
     const encodedMessage = encodeURIComponent(message);
-    const linkWithMessage = selectedLink.includes('web.whatsapp.com') ? `${selectedLink}&text=${encodedMessage}` : `${selectedLink}?text=${encodedMessage}`;
+    const linkWithMessage = selectedLink.includes('web.whatsapp.com') ? `${selectedLink}&text=${encodedMessage}` : `selectedLink}?text=${encodedMessage}`;
+    
+    console.log(`Link final: ${linkWithMessage}`);
     window.open(linkWithMessage, '_blank');
   };
   useEffect(() => {
