@@ -78,7 +78,7 @@ const Plans = () => {
     promoInstallment: "3.000,00",
     duration: "60"
   }];
-  const whatsappLinks = ["https://web.whatsapp.com/send?phone=5565993119620", "https://wa.me/5566992557948"];
+  const whatsappNumbers = ["5565993119620", "5566992557948"];
 
   // Inicializar o temporizador
   useEffect(() => {
@@ -139,18 +139,18 @@ const Plans = () => {
     promoInstallment: string;
     duration: string;
   }, planIndex: number) => {
-    // Alternar entre os dois números: planos ímpares (1°, 3°, 5°...) usam primeiro número
-    // planos pares (2°, 4°, 6°...) usam segundo número
-    const linkIndex = planIndex % 2;
-    const selectedLink = whatsappLinks[linkIndex];
+    // Seleção aleatória entre os dois números
+    const linkIndex = Math.floor(Math.random() * 2);
+    const selectedNumber = whatsappNumbers[linkIndex];
+    const selectedLink = `https://wa.me/${selectedNumber}`;
     
     // Debug: verificar qual número está sendo usado
-    console.log(`Plano ${planIndex + 1} (índice ${planIndex}): linkIndex ${linkIndex} - Usando WhatsApp ${linkIndex === 0 ? '1' : '2'}`);
+    console.log(`Seleção aleatória: Usando WhatsApp ${linkIndex + 1} - ${selectedNumber}`);
     console.log(`Link selecionado: ${selectedLink}`);
     
     const message = `Parabéns!! *SEU CRÉDITO* da Compra Programada já está *APROVADO!* Você escolheu o crédito de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações?`;
     const encodedMessage = encodeURIComponent(message);
-    const linkWithMessage = selectedLink.includes('web.whatsapp.com') ? `${selectedLink}&text=${encodedMessage}` : `${selectedLink}?text=${encodedMessage}`;
+    const linkWithMessage = `${selectedLink}?text=${encodedMessage}`;
     
     console.log(`Link final: ${linkWithMessage}`);
     window.open(linkWithMessage, '_blank');
