@@ -139,15 +139,11 @@ const Plans = () => {
     promoInstallment: string;
     duration: string;
   }) => {
-    console.log('handlePlanClick called with plan:', plan);
-    const selectedLink = whatsappLinks[clickCounterRef.current % 2];
-    clickCounterRef.current++;
-    console.log('Selected WhatsApp link:', selectedLink);
-    const message = `Parabéns! *SEU CRÉDITO* da Compra Programada já está *APROVADO!* Você escolheu o crédito de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações?`;
-    console.log('Generated message:', message);
+    // Usar sempre o primeiro link para consistência
+    const selectedLink = whatsappLinks[0];
+    const message = `Parabéns!! seu credito da compra programada já esta *APROVADA*, você escolheu o credito de R$ ${plan.credit} com parcelas de R$ ${plan.promoInstallment} em ${plan.duration} meses. Gostaria de mais informações?`;
     const encodedMessage = encodeURIComponent(message);
     const linkWithMessage = selectedLink.includes('web.whatsapp.com') ? `${selectedLink}&text=${encodedMessage}` : `${selectedLink}?text=${encodedMessage}`;
-    console.log('Final WhatsApp link:', linkWithMessage);
     window.open(linkWithMessage, '_blank');
   };
   useEffect(() => {
